@@ -1,0 +1,249 @@
+/* for main page */
+/* root */
+:root {
+  --container-bg-color: rgba(179, 178, 178, 0.781);
+  --left-bg-color: rgba(235, 228, 228, 0.212);
+  --left-button-hover-color: rgba(161, 11, 11, 0);
+  --right-bg-color: rgba(43, 43, 43, 0.4);
+  --right-button-hover-color: rgba(31, 101, 230, 0);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+html,
+body {
+  background-color: #08a0bb6d;
+
+  /* background:rgba(240, 240, 248, 0.6) ; */
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* for buttons
+ */
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 2.5rem;
+  padding-top: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: rgb(10, 10, 10) solid 0.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+/* while hovering button */
+.split.left .button:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+}
+
+.split.right .button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+
+/* container */
+.container {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  background: #f0f1f1;
+}
+
+/* for split screen */
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* left portion */
+.split.left {
+  left: 0;
+  background: url("./images/driver.png") center center no-repeat;
+  background-size: cover;
+}
+
+/* after hovering left screen */
+.split.left:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+/* for right screen */
+.split.right {
+  right: 0;
+  background: url('./images/traffic.png') center center no-repeat;
+  background-size: cover;
+}
+
+/* after hovering right screen */
+.split.right:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+}
+
+/* transition  */
+.split.left,
+.split.right,
+.split.right:before,
+.split.left:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+.hover-right .left:before {
+  z-index: 2;
+}
+
+@media(max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 12rem;
+  }
+}
+
+@media(max-height: 800px) {
+  .button {
+    top: 70%;
+  }
+}
+
+
+
+tf {
+  text-align: center;
+}
+
+.tg {
+  text-align: center;
+  margin-top: 2%;
+}
+
+
+
+
+.main-head {
+  height: 150px;
+  background: rgb(85, 79, 79);
+
+}
+
+.sidebox {
+  margin-top: 200px;
+  margin-left: 250px;
+
+}
+
+
+.main {
+  display: block;
+
+  padding-bottom: 100px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidebox {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .login-form {
+    margin-top: 10%;
+  }
+
+  .register-form {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    margin-left: 40%;
+  }
+
+  .sidebox {
+    width: 60%;
+    position: absolute;
+    /* z-index: 1; */
+
+    top: 0;
+    left: 0;
+  }
+
+  .login-form {
+    margin-top: 50%;
+    margin-left: 50%;
+  }
+}
+
+
+.aside {
+  /* margin-top: 20%; */
+  padding: 60px;
+  color: rgb(15, 15, 15);
+  margin-top: 20px;
+}
+
+.aside h2 {
+  font-weight: 300;
+}
+
+.login-btn {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+.login-btn:hover {
+  border: rgb(69, 67, 211) solid 0.05rem;
+  background-color: rgba(162, 162, 189, 0.616);
+
+}

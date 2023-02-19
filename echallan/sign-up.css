@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.topnav1 {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: #333;
+
+
+}
+
+.heading-secondary {
+    font-size: 3rem;
+}
+
+
+.container,
+.signup-form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.container {
+    margin-top: 75px;
+    margin-left: 55px;
+
+}
+
+.signup-form {
+    max-width: 45rem;
+    width: 100%;
+    position: static;
+}
+
+
+.input-text {
+    font-family: inherit;
+    font-size: 1.8rem;
+    padding: 3rem 5rem 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    background: #eee;
+    width: 100%;
+}
+
+.input-text:focus {
+    outline-color: #2196f3;
+}
+
+.btn {
+    padding: 2rem 3rem;
+    border: none;
+    background: #2196f3;
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: inherit;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn:hover {
+    background: #2180f9;
+}
+
+.inp {
+    position: relative;
+}
+
+.label {
+    pointer-events: none;
+
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #00000070;
+    font-weight: 500;
+    font-size: 1.8rem;
+
+    transition: all 0.2s;
+    transform-origin: left;
+}
+
+.input-text:not(:placeholder-shown)+.label,
+.input-text:focus+.label {
+    top: 0.7rem;
+    transform: scale(0.75);
+}
+
+.input-text:focus+.label {
+    color: #2196f3;
+}
+
+.input-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #00000070;
+}
+
+
+.btn-google {
+    color: #222;
+    background: #fff;
+    border: solid 1px #eee;
+    padding: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 1px 2px #00000020;
+}
+
+.btn-google img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.login-wrapper {
+    max-width: 45rem;
+    width: 100%;
+}
+
+.line-breaker .line {
+    width: 50%;
+    height: 1px;
+    background: #eee;
+}
+
+.line-breaker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+
+    margin: 3rem 0;
+}
+
+.line-breaker span:nth-child(2) {
+    margin: 0 2rem;
+}
+
+
+.lg {
+    font-size: 6rem;
+}
+
+
+
+
+
+.img {
+
+    margin-top: -600px;
+
+    margin-left: 57%;
+
+
+}

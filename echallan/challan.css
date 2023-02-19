@@ -1,0 +1,42 @@
+.form-chalan{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: 500px;
+  
+     
+   
+  }
+  input {
+    display: block;
+    margin-bottom: -15px;
+    border-color: #a09e9e;
+    border-style: solid;
+    border-radius: 2px;
+    height: 25px;
+    
+  }
+  .btn {
+    background-color: #044a68;
+    border: none;
+    color: white;
+    padding: 7px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0px;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background-color: #22a1d8;
+  }
+  body {
+    background-color: rgb(140, 215, 240);
+  }
+  img {
+    width: 400px;
+    height: 500px;
+    margin-top: 31px;
+    margin-left: 111px;
+}

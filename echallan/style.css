@@ -1,0 +1,24 @@
+
+
+
+.sidebox {
+    height: 100%;
+    background-color: rgba(69, 53, 219, 0.856);
+ 
+    padding-top: 20px;
+    background: url(./images/Flag-of-Nepal.webp);
+    background-repeat: no-repeat;
+}
+
+#footerhome
+{ 
+	bottom: -300px;
+	width:100%;  
+	height:15vh;
+	text-align: center;
+	background: rgb(235, 240, 236);
+	color: rgb(31, 25, 25);
+	opacity:5;
+	position:absolute;
+}
+
